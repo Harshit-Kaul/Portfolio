@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0, 100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,
-    400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
     <style>
         * {
@@ -22,6 +23,15 @@
             color: white;
             font-family: 'Poppins', sans-serif;
         }
+        .no-underline {
+        text-decoration: none; /* Removes the underline */
+        color: inherit;       
+        font-weight: bold;    
+       }
+
+       .no-underline:hover {
+        color: #007bff;       
+       } 
 
         nav {
             display: flex;
@@ -120,17 +130,17 @@
 
         .secondSection .box {
             background: white;
-            width: 86vw;
+            width: 80vw;
             height: 2px;
             margin: 56px 0;
             display: flex;
         }
 
         .secondSection .vertical {
-            height: 93px;
+            height: 70px;
             width: 1px;
             background-color: white;
-            margin: 0 100px;
+            margin: 0 170px;
         }
 
         .image-top {
@@ -142,7 +152,7 @@
 
         .vertical-title {
             position: relative;
-            top: 75px;
+            top: 70px;
             width: 120px;
         }
 
@@ -160,16 +170,19 @@
 
         .footer {
             display: flex;
-            padding: 23px 122px;
+            padding: 22px 120px;
             justify-content: space-evenly;
         }
 
         .footer ul {
             list-style: none;
         }
+        .footer ul li{
+            padding: 5px;
+        }
 
         .footer>div {
-            width: 223px;
+            width: 200px;
         }
 
         footer .footer-rights {
@@ -186,14 +199,14 @@
 <body>
     <header>
         <nav>
-            <div class="left">Harshit's Portfolio</div>
+            <div class="left"><a href="portfolio.html" class="no-underline">Harshit's Portfolio</a></div>
             <div class="right"></div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
+                <li><a href="portfolio.html" class="no-underline">Home</a></li>
+                <li><a href="portfolio.html" class="no-underline">About</a></li>
+                <li><a href="portfolio.html" class="no-underline">Services</a></li>
+                <li><a href="projects.html" class="no-underline">Projects</a></li>
+                <li><a href="contactme.html" class="no-underline">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -206,8 +219,8 @@
                 <div>and I am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit GitHub</button>
+                    <a href="Harshit_FrontendDev_CV.pdf"><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/dashboard"><button class="btn">Visit GitHub</button></a>
                 </div>
             </div>
             <div class="rightSection">
@@ -221,64 +234,52 @@
 
             <div class="box">
                 <div class="vertical">
-                    <img class="image-top" src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png"
-                        alt="">
+                    <img class="image-top" src="bg1.png" alt="">
                     <div class="vertical-title">
-                        HTML Developer (2010-2012)
+                        Operations Associate - Cuemath (2020-2021)
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid, odio ea at culpa totam
-                        minima tenetur assumenda mollitia vero aliquam officiis. Minima explicabo itaque placeat
-                        officiis minus tenetur doloribus.
+                        • Supported the development of 'Leap', an online learning platform, using HTML, CSS, and
+                        JavaScript.
+                        <br>• Provided training and guidance to educators for enhancing online learning experiences.
+                        <br>• Improved operational efficiency by implementing streamlined workflows and resolving key
+                        stakeholder concerns.
+                        <br>• Analyzed customer support data using Excel to identify trends and optimize resolution
+                        times.
+
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="https://www.svgrepo.com/download/303360/nodejs-logo.svg" alt="">
+                    <img class="image-top" src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" alt="">
                     <div class="vertical-title">
-                        Node.js Developer (2012-2014)
+                        Frontend Developer Intern - SkillParkho(2021-2022)
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid, odio ea at culpa totam
-                        minima tenetur assumenda mollitia vero aliquam officiis. Minima explicabo itaque placeat
-                        officiis minus tenetur doloribus.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png"
-                        alt="">
-                    <div class="vertical-title">
-                        FrontEnd Developer - Instagram (2014-2016)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid, odio ea at culpa totam
-                        minima tenetur assumenda mollitia vero aliquam officiis. Minima explicabo itaque placeat
-                        officiis minus tenetur doloribus.
+                        • Created dynamic UI components using JavaScript and styled them with Tailwind CSS and
+                        SASS(SCSS).
+                        • Assisted in designing web layouts with responsive design principles, ensuring seamless user
+                        experiences.
+                        • Debugged and resolved performance issues using Chrome DevTools, improving application speed
+                        and functionality.
+                        <br>• Contributed to Agile workflows, utilizing Git for version control and collaboration.
+
                     </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top"
-                        src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
+                        src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
                         alt="">
                     <div class="vertical-title">
-                        FrontEnd Developer - Youtube (2016-2018)
+                        Frontend Developer - SkillParkho(2022-Present)
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid, odio ea at culpa totam
-                        minima tenetur assumenda mollitia vero aliquam officiis. Minima explicabo itaque placeat
-                        officiis minus tenetur doloribus.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="https://1000logos.net/wp-content/uploads/2017/02/Facebook-Logosu.png"
-                        alt="">
-                    <div class="vertical-title">
-                        FrontEnd Developer - Facebook (2018-2020)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid, odio ea at culpa totam
-                        minima tenetur assumenda mollitia vero aliquam officiis. Minima explicabo itaque placeat
-                        officiis minus tenetur doloribus.
+                        • Architected and implemented modular React component library, increasing code reusability by
+                        40%
+                        <br>• Implemented code splitting and lazy loading, reducing initial load time by 35%
+                        <br>• Enhanced user engagement through intuitive, accessibility-compliant interface design
+                        <br>• Improved website conversion rates by 25% through UX/UI refinements
+                        <br>• Optimized frontend build processes with Webpack, reducing bundle size by 30%
+                        <br>• Utilized Git workflow for collaborative development and version control
                     </div>
                 </div>
             </div>
@@ -287,10 +288,10 @@
 
     <footer>
         <div class="footer">
-            <div class="first-footer">
-                <h3>Harshit's Developer Portfolio</h3>
+            <div class="footer-first">
+                <h4>Harshit's Portfolio</h3>
             </div>
-            <div class="second-footer">
+            <div class="footer-second">
                 <ul>
                     <li>Home</li>
                     <li>About</li>
@@ -298,7 +299,7 @@
                     <li>Contact</li>
                 </ul>
             </div>
-            <div class="third-footer">
+            <div class="footer-third">
                 <ul>
                     <li>Home</li>
                     <li>About</li>
@@ -324,7 +325,7 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            strings: ['FrontEnd Developer'],
             typeSpeed: 50,
         });
     </script>
